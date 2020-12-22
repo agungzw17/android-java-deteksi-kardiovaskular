@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".ui.menu.listpatient.listCekpasien.CekPasienActivity"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/linear_layout1"
+        android:layout_width="match_parent"
+        app:hideOnScroll="true"
+        android:layout_height="120dp">
+        <androidx.appcompat.widget.Toolbar
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="600dp"
+            android:layout_marginLeft="-100dp"
+            android:background="@drawable/circle"
+            android:layout_height="150dp"
+            android:layout_marginTop="-70dp">
+        </androidx.appcompat.widget.Toolbar>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_detail_pasien"
+            android:layout_width="250dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="10dp"
+            android:layout_height="110dp"
+            android:padding="5dp">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/input_nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        tools:text="Nama pasien"/>
+                    <TableLayout
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp">
+                        <TableRow
+                            android:id="@+id/tableRow1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txt_nik"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="#44FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="NIK        :" />
+                            <TextView
+                                android:id="@+id/input_nik"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="#88FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="000000000000000000000000000000000000000000000000000000000000000000000000" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tableRow2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txt_tanggal_lahir"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="#44FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="TTL        :" />
+                            <TextView
+                                android:id="@+id/input_tanggal_lahir"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="#88FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="0000000000000" />
+
+                        </TableRow>
+                        <TableRow
+                            android:id="@+id/tableRow3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/txt_alamat"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:background="#44FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="Alamat   :" />
+                            <TextView
+                                android:id="@+id/input_alamat"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:background="#88FFFFFF"
+                                android:textColor="#FF000000"
+                                android:text="0000000000000000000000000000000000000000000000000000000000000" />
+
+                        </TableRow>
+
+                    </TableLayout>
+                </LinearLayout>
+            </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_cek_patient"
+                    android:layout_width="match_parent"
+                    tools:listitem="@layout/item_cek_patient"
+                    app:spanCount="2"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/red_app"
+            app:fabAlignmentMode="center"
+            app:fabCradleRoundedCornerRadius="50dp"
+            app:hideOnScroll="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55.0dip"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+                <!--                <include layout="@layout/navigation_bar" />-->
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:hideOnScroll="true"
+            android:elevation="4dp"
+            android:tint="@android:color/white"
+            app:backgroundTint="@color/red_app"
+            app:fabSize="normal"
+            android:src="@drawable/ic_baseline_add"
+            app:layout_anchor="@id/navigation" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DeteksiKardiovaskular</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="underline"><u><b><i></i></b></u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cek_pasien">Cek pasien</string>
+    <string name="daftar_pasien">Daftar Pasien</string>
+
+    <string-array name="labels_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="chestPainType">
+        <item>typical angina</item>
+        <item>atypical angina</item>
+        <item>non-anginal pain</item>
+        <item>asymptomatic</item>
+    </string-array>
+
+    <string-array name="rest_ecg">
+        <item>normal</item>
+        <item>ST-T wave abnormality</item>
+        <item>left ventricular hypertrophy</item>
+    </string-array>
+
+    <string-array name="st_slope">
+        <item>upsloping</item>
+        <item>flat</item>
+        <item>downsloping</item>
+    </string-array>
+
+    <string-array name="thalassemia">
+        <item>normal</item>
+        <item>fixed defect</item>
+        <item>reversable defect</item>
+    </string-array>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493323386736",
+    "firebase_url": "https://javadeteksikardiovaskular.firebaseio.com",
+    "project_id": "javadeteksikardiovaskular",
+    "storage_bucket": "javadeteksikardiovaskular.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493323386736:android:1e43bd16e2312227e1d9b5",
+        "android_client_info": {
+          "package_name": "com.agung.deteksikardiovaskular"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493323386736-28tq6j8hofovnb95mn62nodg5gdc5fud.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKfJmVCnHG6IqsTae8ZXmMMtINy9o8uF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493323386736-28tq6j8hofovnb95mn62nodg5gdc5fud.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
